@@ -1,0 +1,5 @@
+include ':lib2'
+include ':lib_aop'
+include ':lib'
+include ':app'
+rootProject.name = "InstanceFactory"
