@@ -14,3 +14,12 @@ tasks.withType(JavaCompile) {//解决build警告：编码GBK的不可映射字�
 }
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"
+task classesJar(type: Jar) {
+    from "$buildDir/libs"
+}
+
+artifacts {
+    archives classesJar
+//    archives javadocJar
+//    archives sourcesJar
+}

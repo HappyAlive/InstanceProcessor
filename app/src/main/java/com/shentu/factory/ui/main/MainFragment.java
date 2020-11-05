@@ -33,6 +33,7 @@ public class MainFragment extends Fragment {
         mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 //        InstanceFactory1.
 //        testFactory.
+//        InstanceFactory.create()
     }
 
 }

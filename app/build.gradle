@@ -40,4 +40,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 //    implementation 'com.github.HappyAlive.InstanceProcessor:lib2:1.1'
 //    implementation 'com.github.HappyAlive:InstanceProcessor:1.1'
+//    implementation 'com.github.HappyAlive.InstanceProcessor:lib2:1.4'
 }
