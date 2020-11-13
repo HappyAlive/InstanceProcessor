@@ -1,15 +1,15 @@
 //apply plugin: 'java'
 apply plugin: 'java-library'
+//apply plugin: 'com.kezong.fat-aar'
 apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.HappyAlive'
+group = 'com.github.HappyAlive'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
     implementation 'com.google.auto.service:auto-service:1.0-rc4'
-    api 'com.squareup:javapoet:1.10.0'
+    implementation 'com.squareup:javapoet:1.10.0'
 
-    implementation project( ':lib2')
+//    implementation project( ':lib2')
 }
 
 tasks.withType(JavaCompile) {//解决build警告：编码GBK的不可映射字符

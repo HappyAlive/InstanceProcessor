@@ -1,10 +1,8 @@
 package com.shentu.factory.ui.main;
 
-import androidx.lifecycle.ViewModel;
-import annontation.NewInstance;
+import com.shentu.factory.BaseViewModule;
 
-@NewInstance
-public class MainViewModel extends ViewModel {
+public class MainViewModel extends BaseViewModule {
     // TODO: Implement the ViewModel
 
 

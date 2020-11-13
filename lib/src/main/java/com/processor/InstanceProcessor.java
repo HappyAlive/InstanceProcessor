@@ -49,7 +49,10 @@ public class InstanceProcessor implements IProcessor {
         try {
         //开始一个控制流
         CodeBlock.Builder blockBuilder = CodeBlock.builder().beginControlFlow("switch(mClass.getSimpleName())");
+            NewInstance annotation = roundEnv.getClass().getAnnotation(NewInstance.class);
+            if (null==annotation){
 
+            }
 //            for (TypeElement element : ElementFilter.typesIn(roundEnv.getRootElements())) {
             for (TypeElement element : ElementFilter.typesIn(roundEnv.getElementsAnnotatedWith(NewInstance.class))) {
 
